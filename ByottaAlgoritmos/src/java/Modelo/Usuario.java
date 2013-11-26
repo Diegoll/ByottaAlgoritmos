@@ -6,14 +6,21 @@
 
 package Modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Pc
  */
-public class valoracion {
-    int estrellas;
-    int iduser;
-    int idpeli;
+public class Usuario {
+    int id;
+    String nombre;
+    ArrayList<valoracion> valoraciones;
+
+    Usuario(int indiceusu) {
+        id=indiceusu; 
+        valoraciones=new ArrayList<>();
+    }
     
-    valoracion(int est, int usr, int peli){estrellas=est;iduser=usr;idpeli=peli;}
+    
 }
